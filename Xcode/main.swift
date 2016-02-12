@@ -11,6 +11,8 @@
 #if os(Linux)
 import Glibc
 srandom(UInt32(clock()))
+#else
+import Foundation
 #endif
 
 import DeckOfPlayingCards
